@@ -77,7 +77,9 @@ const Providers = () => {
             <DataCell className="action-cell">
               <SecondaryButton
                 size="small"
-                onClick={(event) => handleMigrateClick(n.code!, event)}
+                onClick={(event: React.MouseEvent) =>
+                  handleMigrateClick(n.code!, event)
+                }
               >
                 Migrate Lines
               </SecondaryButton>
