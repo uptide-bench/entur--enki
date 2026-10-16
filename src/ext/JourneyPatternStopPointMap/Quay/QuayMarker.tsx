@@ -43,7 +43,7 @@ const QuayMarker = memo(
   }: QuayMarkerProps) => {
     const intl = useIntl();
     const { formatMessage } = intl;
-    const markerRef: MutableRefObject<any> = useRef();
+    const markerRef: MutableRefObject<any> = useRef(undefined);
     usePopupOpeningOnFocus(isPopupToBeOpen, markerRef, clearFocusedMarker);
 
     return (
